@@ -14,3 +14,11 @@ def read():
     for i in range(len(data)):
         data[i] = str(data[i])
     return data
+
+def write(thelist):
+    #create edit the text file
+    file = open("data.csv", "wt")
+    # for each element in list write i value and add space between new value
+    for i in range(len(thelist)):
+        file.write(str(thelist[i]) + " ")
+    file.close()
