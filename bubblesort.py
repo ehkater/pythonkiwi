@@ -1,3 +1,7 @@
+import time
+
+start_time = time.time()
+
 def bubblesort(mylist):
     for i in range (0, len(mylist) - 1): 
         for j in range (0 , len(mylist) - 1 - i):
@@ -22,3 +26,11 @@ def write(thelist):
     for i in range(len(thelist)):
         file.write(str(thelist[i]) + " ")
     file.close()
+    
+thelist = read()
+print(bubblesort(thelist))
+write(thelist)
+
+end_time = time.time()
+
+print(end_time - start_time)
