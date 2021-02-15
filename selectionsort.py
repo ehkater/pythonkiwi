@@ -21,3 +21,15 @@ def read():
     for i in range(len(data)):
         data[i] = str(data[i])
     return data
+
+def write(list_a):
+    #create edit the text file
+    file = open("data.csv", "wt")
+    # for each element in list write i value and add space between new value
+    for i in range(len(list_a)):
+        file.write(str(list_a[i]) + " ")
+    file.close()
+
+list_a = read()
+print(selection_sort(list_a))
+write(list_a)
