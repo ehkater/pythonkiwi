@@ -1,3 +1,7 @@
+import time
+
+start_time = time.time()
+
 def selection_sort(list_a):
     indexing_length = range(0, len(list_a)-1 )
 
@@ -33,3 +37,7 @@ def write(list_a):
 list_a = read()
 print(selection_sort(list_a))
 write(list_a)
+
+end_time = time.time()
+
+print(end_time - start_time)
