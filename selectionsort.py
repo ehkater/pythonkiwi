@@ -1,6 +1,8 @@
 import time
+import matplotlib.pyplot as plt
 
 start_time = time.time()
+
 
 def selection_sort(list_a):
     indexing_length = range(0, len(list_a)-1 )
@@ -41,3 +43,8 @@ write(list_a)
 end_time = time.time()
 
 print(end_time - start_time)
+
+
+plt.plot([1, 2, 3, 4,])
+plt.ylabel('some numbers')
+plt.show()
