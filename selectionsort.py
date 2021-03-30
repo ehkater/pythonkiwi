@@ -45,6 +45,9 @@ end_time = time.time()
 print(end_time - start_time)
 
 
-plt.plot([1, 2, 3, 4,])
-plt.ylabel('some numbers')
+
+
+plt.plot(list_a)
+
+plt.title('kiwi weight distribution')
 plt.show()
